@@ -20,7 +20,7 @@ You will only want the "View Mobile Site" link to show if a user is viewing the 
         <block type="cls_designswitcher/link" template="cls/designswitcher/link.phtml" name="designswitcher.link"/>
     </reference>
 
-    *<small>The block is designed to work with Magento EE's Full Page Cache.</small>*
+*<small>The block is designed to work with Magento EE's Full Page Cache.</small>*
 
 ## Installation
 1. Copy module files into Magento root either manually or by using modman
