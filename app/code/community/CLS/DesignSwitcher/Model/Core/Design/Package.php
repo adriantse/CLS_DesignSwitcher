@@ -21,7 +21,7 @@ class CLS_DesignSwitcher_Model_Core_Design_Package extends Mage_Core_Model_Desig
     protected function _checkUserAgentAgainstRegexps($regexpsConfigPath)
     {
         $ignoreException = null;
-        if (isset($_COOKIE[CLS_DesignSwitcher_Helper_Data::FULL_SITE_COOKIE])) {
+        if (isset($_COOKIE[CLS_DesignSwitcher_Helper_Data::FULL_SITE_COOKIE]) && $_COOKIE[CLS_DesignSwitcher_Helper_Data::FULL_SITE_COOKIE] === '1') {
             $ignoreException = $_COOKIE[CLS_DesignSwitcher_Helper_Data::FULL_SITE_COOKIE];
         }
         return $ignoreException ? false : parent::_checkUserAgentAgainstRegexps($regexpsConfigPath);
